@@ -1,0 +1,432 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+
+
+<body>
+  {% block content %}
+
+
+      <!-- ***** Header Area Start ***** -->
+  
+      <!-- ***** Header Area End ***** -->
+
+      <!-- ***** Main Banner Area Start ***** -->
+      <div class="swiper-container" id="top">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-inner" style="background-image:url({% static 'images/slide-01.jpg' %})">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="header-text">
+                      <h2>Get <em>ready</em> for a business<br>&amp; upgrade <em>all aspects</em></h2>
+                      <div class="div-dec"></div>
+                      <p>Building a brand takes time and effort, but with the right strategies, you can create a lasting impression.</p>
+                      <div class="buttons">
+                        <div class="green-button">
+                          <a href="{% url 'our_services' %}">Discover More</a>
+                        </div>
+                        <div class="orange-button">
+                          <a href="{% url 'contact' %}">Contact Us</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-inner" style="background-image:url({% static 'images/slide-02.jpg' %})">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="header-text">
+                      <h2><em>Digital Marketing</em> for you <br>&amp; Best <em>Marketing</em> Tips</h2>
+                      <div class="div-dec"></div>
+                      <p>Brands need to adapt to the digital landscape to stay competitive. Effective digital marketing strategies can help businesses reach their target audience and achieve their goals.</p>
+                      <div class="buttons">
+                        <div class="green-button">
+                          <a href="#">Discover More</a>
+                        </div>
+                        <div class="orange-button">
+                          <a href="#">Contact Us</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-inner" style="background-image:url({% static 'images/slide-03.jpg' %})">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="header-text">
+                      <h2>Best One in Town<br>&amp; Digital <em>Services</em></h2>
+                      <div class="div-dec"></div>
+                      <p>We provide top-notch digital services to help your business thrive in the online world.</p>
+                      <div class="buttons">
+                        <div class="green-button">
+                          <a href="{% url 'our_services' %}">Discover More</a>
+                        </div>
+                        <div class="orange-button">
+                          <a href="{% url 'contact' %}">Contact Us</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+
+      <!-- ***** Main Banner Area End ***** -->
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="service-item">
+                <i class="fas fa-archive"></i>
+                <h4>Digital Marketing</h4>
+                <p>We offer comprehensive digital marketing services to help you reach your target audience effectively.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-item">
+                <i class="fas fa-cloud"></i>
+                <h4>SEO Optimization</h4>
+                <p>We help improve your website's visibility on search engines through effective SEO strategies.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-item">
+                <i class="fas fa-charging-station"></i>
+                <h4>Content Marketing</h4>
+                <p>We create and distribute valuable content to attract and engage your target audience.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-item">
+                <i class="fas fa-suitcase"></i>
+                <h4>Brand Strategy</h4>
+                <p>We help businesses develop a strong brand identity and effective marketing strategies.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-item">
+                <i class="fas fa-archway"></i>
+                <h4>Web Development</h4>
+                <p>We build responsive and functional websites to help you establish a strong online presence.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-item">
+                <i class="fas fa-puzzle-piece"></i>
+                <h4>Creative Solutions</h4>
+                <p>We offer innovative solutions to help your business stand out in a crowded marketplace.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="simple-cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <h4>Business <em>Solutions</em> and <strong>Digital</strong> Marketing</h4>
+            </div>
+            <div class="col-lg-7">
+              <div class="buttons">
+                <div class="green-button">
+                  <a href="{% url 'our_services' %}">Discover More</a>
+                </div>
+                <div class="orange-button">
+                  <a href="{% url 'contact' %}">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <div class="section-heading">
+                <h6>About Us</h6>
+                <h4>Know Us Better</h4>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="naccs">
+                <div class="tabs">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="menu">
+                        <div class="active gradient-border"><span>Web Design</span></div>
+                        <div class="gradient-border"><span>Graphics</span></div>
+                        <div class="gradient-border"><span>Web Development</span></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <ul class="nacc">
+                        <li class="active">
+                          <div>
+                            <div class="main-list">
+                              <span class="title">Project Title</span>
+                              <span class="title">Budget</span>
+                              <span class="title">Deadline</span>
+                              <span class="title">Client</span>
+                            </div>
+                            <div class="list-item">
+                              <span class="item item-title">Website Redesign</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Dec 12</span>
+                              <span class="item">Web Biz</span>
+                            </div>
+                            <div class="list-item">
+                              <span class="item item-title">Website Renovation</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Dec 10</span>
+                              <span class="item">Online Ads</span>
+                            </div>
+                            <div class="list-item">
+                              <span class="item item-title">Marketing Plan</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Dec 8</span>
+                              <span class="item">Web Biz</span>
+                            </div>
+                            <div class="list-item last-item">
+                              <span class="item item-title">All-new Website</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Dec 2</span>
+                              <span class="item">Web Presence</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <div class="main-list">
+                              <span class="title">Project Title</span>
+                              <span class="title">Budget</span>
+                              <span class="title">Deadline</span>
+                              <span class="title">Client</span>
+                            </div>
+                            <div class="list-item">
+                              <span class="item item-title">Graphics Redesign</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Nov 24</span>
+                              <span class="item">Media One</span>
+                            </div>
+                            <div class="list-item">
+                              <span class="item item-title">Digital Graphics</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Nov 18</span>
+                              <span class="item">Second Media</span>
+                            </div>
+                            <div class="list-item">
+                              <span class="item item-title">New Artworks</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Nov 10</span>
+                              <span class="item">Artwork Push</span>
+                            </div>
+                            <div class="list-item last-item">
+                              <span class="item item-title">Complex Arts</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Nov 3</span>
+                              <span class="item">Media One</span>
+                            </div>
+                        </li>
+                        <li>
+                          <div>
+                            <div class="main-list">
+                              <span class="title">Project Title</span>
+                              <span class="title">Budget</span>
+                              <span class="title">Estimated</span>
+                              <span class="title">Technology</span>
+                            </div>
+                            <div class="list-item">
+                              <span class="item item-title">Backend Development</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Nov 28</span>
+                              <span class="item">PHP MySQL</span>
+                            </div>
+                            <div class="list-item">
+                              <span class="item item-title">New Web App</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Nov 18</span>
+                              <span class="item">Python Programming</span>
+                            </div>
+                            <div class="list-item">
+                              <span class="item item-title">Frontend Interactions</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Nov 10</span>
+                              <span class="item">JavaScripts</span>
+                            </div>
+                            <div class="list-item last-item">
+                              <span class="item item-title">Video Creations</span>
+                              <span class="item">Negotiable</span>
+                              <span class="item">2022 Nov 3</span>
+                              <span class="item">Multimedia</span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="right-content">
+                <h4>Please tell us about your idea and how you want it to be</h4>
+                <p>You have the <b>idea<br>we get it seen</b> Build your brand<br><br> grow your business</p>
+                <div class="green-button">
+                  <a href="about-us.html">Discover More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="left-image">
+                <img src="{% static 'images/calculator-image.png' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="section-heading">
+                <h6>Your Freedom</h6>
+                <h4>Leave the hard work to us</h4>
+              </div>
+              <form id="calculate" action="" method="get">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <label for="name">Your Name</label>
+                      <input type="name" name="name" id="name" placeholder="" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <label for="email">Your Email</label>
+                      <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <label for="subject">Subject</label>
+                      <input type="subject" name="subject" id="subject" placeholder="" autocomplete="on" >
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="orange-button">Submit Now</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <div class="section-heading">
+                <h6>Testimonials</h6>
+                <h4>What They Say</h4>
+              </div>
+            </div>
+            <div class="col-lg-10 offset-lg-1">
+              <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+                <div class="item">
+                  <i class="fa fa-quote-left"></i>
+                  <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula. Aliquam vel scelerisque elit.”</p>
+                  <h4>David Eigenberg</h4>
+                  <span>CEO of Mexant</span>
+                  <div class="right-image">
+                    <img src="assets/images/testimonials-01.jpg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                  <i class="fa fa-quote-left"></i>
+                  <p>“Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh dolor, at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum tempus.”</p>
+                  <h4>Andrew Garfield</h4>
+                  <span>CTO of Mexant</span>
+                  <div class="right-image">
+                    <img src="assets/images/testimonials-01.jpg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                  <i class="fa fa-quote-left"></i>
+                  <p>“Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo. Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo.”</p>
+                  <h4>George Lopez</h4>
+                  <span>Crypto Manager</span>
+                  <div class="right-image">
+                    <img src="assets/images/testimonials-01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <section class="partners">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-sm-4 col-6">
+              <div class="item">
+                <img src="{% static 'images/client-01.png' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6">
+              <div class="item">
+                <img src="{% static 'images/client-01.png' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6">
+              <div class="item">
+                <img src="{% static 'images/client-01.png' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6">
+              <div class="item">
+                <img src="{% static 'images/client-01.png' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6">
+              <div class="item">
+                <img src="{% static 'images/client-01.png' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6">
+              <div class="item">
+                <img src="{% static 'images/client-01.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  {% endblock content %}
+</body>
