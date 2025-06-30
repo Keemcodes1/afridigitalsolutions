@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'afriWeb.urls'
+ROOT_URLCONF = 'afriweb.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'afriWeb.wsgi.application'
+WSGI_APPLICATION = 'afriweb.wsgi.application'
 
 
 # Database
