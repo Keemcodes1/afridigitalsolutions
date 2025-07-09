@@ -1,4 +1,218 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Our Services{% endblock %}
+<body>
+  {% block content %}
+    <div class="page-heading">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-text">
+              <h2>Our Services</h2>
+              <div class="div-dec"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <section class="main-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="service-item">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="left-image">
+                    <img src="{% static 'images/service-image-01.jpg' %}" alt="Digital Marketing">
+                  </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                  <div class="right-text-content">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Digital Marketing</h4>
+                    <p>We craft strategic digital marketing campaigns that elevate your brand's online presence. By leveraging the latest tools and techniques, we ensure that your marketing efforts yield measurable results and a high return on investment.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="service-item">
+              <div class="row">
+                <div class="col-lg-6 align-self-center">
+                  <div class="left-text-content">
+                    <i class="fab fa-facebook"></i>
+                    <h4>Meta Ads</h4>
+                    <p>Our team excels in creating and managing Meta ad campaigns that capture attention and drive engagement. We focus on delivering ads that resonate with your audience, ensuring maximum reach and effectiveness.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="right-image">
+                    <img src="{% static 'images/service-image-02.jpg' %}" alt="Meta Ads">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="service-item last-service">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="left-image">
+                    <img src="{% static 'images/service-image-03.jpg' %}" alt="Social Media Management">
+                  </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                  <div class="right-text-content">
+                    <i class="fas fa-users"></i>
+                    <h4>Social Media Management</h4>
+                    <p>With our social media management services, we help you build and maintain a strong social media presence. From content creation to community management, we ensure your brand stays relevant and engaging across all platforms.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="simple-cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h4>Digital <em>Solutions</em> and <strong>Branding</strong></h4>
+          </div>
+          <div class="col-lg-7">
+            <div class="buttons">
+              <div class="green-button">
+                <a href="{% url 'our_services' %}">Discover More</a>
+              </div>
+              <div class="orange-button">
+                <a href="{% url 'contact' %}">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="section-heading">
+              <h6>Our Services in Detail</h6>
+              <h4>Upgrade your digital presence</h4>
+            </div>
+          </div>
+          <div class="col-lg-10 offset-lg-1">
+            <div class="naccs">
+              <div class="tabs">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu">
+                      <div class="active gradient-border"><span>Ad Campaigns</span></div>
+                      <div class="gradient-border"><span>Branding</span></div>
+                      <div class="gradient-border"><span>Website Design</span></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <ul class="nacc">
+                      <li class="active">
+                        <div>
+                          <div class="left-image">
+                            <img src="{% static 'images/service-details-01.jpg' %}" alt="Ad Campaigns">
+                          </div>
+                          <div class="right-content">
+                            <h4>Learn more about our Ad Campaigns</h4>
+                            <p>We design and execute targeted ad campaigns that align with your business goals. Our approach ensures that your ads are seen by the right people, at the right time, driving conversions and boosting your bottom line.</p>
+                            <span>- Effective Ad Strategies</span>
+                            <span>- Targeted Audience Reach</span>
+                            <span class="last-span">- Conversion Optimization</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="left-image">
+                            <img src="{% static 'images/service-details-02.jpg' %}" alt="Branding">
+                          </div>
+                          <div class="right-content">
+                            <h4>Read more on Branding</h4>
+                            <p>Our branding services are designed to create a cohesive and compelling brand identity. We work with you to develop a brand strategy that communicates your values and connects with your target audience.</p>
+                            <span>- Brand Strategy</span>
+                            <span>- Visual Identity</span>
+                            <span class="last-span">- Brand Messaging</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="left-image">
+                            <img src="{% static 'images/service-details-03.jpg' %}" alt="Website Design">
+                          </div>
+                          <div class="right-content">
+                            <h4>How we design and maintain websites</h4>
+                            <p>We offer professional website design and maintenance services to ensure your online presence is both visually appealing and functionally robust. Our designs are responsive, user-friendly, and optimized for performance.</p>
+                            <span>- Custom Web Design</span>
+                            <span>- Website Maintenance</span>
+                            <span class="last-span">- User Experience Optimization</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="{% static 'images/client-01.png' %}" alt="Partner 1">
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="{% static 'images/client-01.png' %}" alt="Partner 2">
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="{% static 'images/client-01.png' %}" alt="Partner 3">
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="{% static 'images/client-01.png' %}" alt="Partner 4">
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="{% static 'images/client-01.png' %}" alt="Partner 5">
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="{% static 'images/client-01.png' %}" alt="Partner 6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endblock %}
+</body>
+
+{% comment %} 
 
 {% extends "base.html" %}
 {% load static %}
@@ -221,4 +435,4 @@
         </div>
       </div>
     </section>
-  {% endblock %}
+  {% endblock %} {% endcomment %}
